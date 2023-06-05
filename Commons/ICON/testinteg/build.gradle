@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+optimizedJar.enabled = false
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+dependencies {
+    implementation 'foundation.icon:icon-sdk:2.0.0'
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+}

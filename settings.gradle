@@ -1,0 +1,32 @@
+rootProject.name = 'java-score-starter-boilerplate'
+
+include(
+        // -------------------
+        // --- Hello World ---
+        // -------------------
+
+        // Contracts
+        ":Contracts:hello-world",
+        ":Contracts:customIrc2Token",
+
+        // Tests
+        ':Tests:hello-world-Test',
+        ':Tests:customIrc2Token-Test',
+
+        // ---------------
+        // --- Commons ---
+        // ---------------
+
+        // Libraries & common code
+        ':Commons:Test',
+        ':Commons:Utils',
+        ':Commons:Types',
+        ':Commons:Structs',
+        ':Commons:Interfaces',
+        ':Commons:Clients',
+
+        // ICON related code
+        ':Commons:ICON:irc2',
+        ':Commons:ICON:unittest',
+        ':Commons:ICON:testinteg',
+)
