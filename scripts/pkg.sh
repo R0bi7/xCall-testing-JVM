@@ -9,3 +9,7 @@ getHelloWorldPkg () {
 getCustomIrc2TokenPkg () {
   echo customIrc2Token
 }
+
+getDAppProxySamplePkg () {
+  echo dapp-sample
+}

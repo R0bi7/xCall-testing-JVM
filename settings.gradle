@@ -8,6 +8,7 @@ include(
         // Contracts
         ":Contracts:hello-world",
         ":Contracts:customIrc2Token",
+        ":Contracts:dapp-sample",
 
         // Tests
         ':Tests:hello-world-Test',

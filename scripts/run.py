@@ -12,7 +12,7 @@ import getpass
 
 class Command:
 
-    def __init__(self) -> None:
+    def __init__(self, str=None) -> None:
         parser = argparse.ArgumentParser()
         parser.add_argument('-e', '--endpoint', type=str, default='gochain', help='target endpoint for connection')
         parser.add_argument('-k', '--keystore', type=str, help='keystore path')

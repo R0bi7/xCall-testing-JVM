@@ -1,0 +1,25 @@
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+dependencies {
+    compileOnly("foundation.icon:javaee-api:0.9.4")
+    implementation project(':Commons:Interfaces')
+
+    annotationProcessor("foundation.icon:javaee-score-client:0.10.3")
+    compileOnly("foundation.icon:javaee-score-client:0.10.3")
+}
+
+optimizedJar {
+    mainClassName = 'foundation.icon.btp.xcall.sample.DAppProxySample'
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

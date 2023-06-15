@@ -4,9 +4,9 @@
     alt="Icon logo">
 </p>
 
-# JAVA SCORE starter boilerplate
+# xCall testing JVM
 
-A repo for boilerplate code for testing, deploying and shipping Java Smart Contracts on Icon blockchain.
+A repository containing xCall early testing Smart Contracts. Specifically, `./Contracts/dapp-sample` package contains showcase proxy smart contract.
 
 ## Requirements
 
